@@ -8,7 +8,7 @@ jwt = JWTManager()
 def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
-    app.config['SECRET_KEY'] = 'secret-key'
+    app.config['SECRET_KEY'] = '20669'
     app.config['JWT_SECRET_KEY'] = 'jwt-secret'
 
     db.init_app(app)
